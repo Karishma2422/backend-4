@@ -1,0 +1,18 @@
+
+1. use npm init to create package.json file
+2. write module instead of commonjs to use lates import methods (ES6 syntax)
+3. create index.js starting file
+4. write start script and give it node index.js this will be the starting path and you can start using npm start
+5. inside index.js create express structure and build apis and run it on port 8000
+
+import express from "express";
+
+const app = express();
+
+app.get("/", (req,res)=>{
+    res.send("Welcome!")
+})
+
+app.isten(8000, ()=> {console.log("Server running on port 8000")})
+
+6. start the server using npm start command
